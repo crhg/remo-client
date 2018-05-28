@@ -1,0 +1,9 @@
+{
+    "swaggerUrl": "http://swagger.nature.global/swagger.yml",
+    "options": {
+        "gitUserId": "crhg",
+        "gitRepoId": "remo-client",
+        "invokerPackage": "Crhg\\RemoClient"
+
+    }
+}
