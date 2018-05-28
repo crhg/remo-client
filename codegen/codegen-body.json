@@ -1,5 +1,5 @@
 {
-    "swaggerUrl": "http://swagger.nature.global/swagger.yml",
+    "swaggerUrl": "https://github.com/crhg/remo-client/raw/master/codegen/swagger.yml",
     "options": {
         "gitUserId": "crhg",
         "gitRepoId": "remo-client",
