@@ -607,6 +607,8 @@ definitions:
     description: Empty means automatic.
     enum:
       - ""     
+      - "auto"
+      - "still"
   Button:
     type: string
     description: Specify "power-off" always if you want the air conditioner powered off. Empty means powered on.
