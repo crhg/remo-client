@@ -103,7 +103,9 @@ paths:
         200:
           description: List of Remo devices
           schema:
-            $ref: '#/definitions/Devices'
+            type: array
+            items:
+              $ref: '#/definitions/Device'
   /detectappliance:
     post:
       description: Find the air conditioner best matching the provided infrared signal.
