@@ -28,6 +28,7 @@
  */
 
 namespace Crhg\RemoClient;
+use Crhg\RemoClient\Model\AliasInterface;
 
 /**
  * ObjectSerializer Class Doc Comment
@@ -289,6 +290,8 @@ class ObjectSerializer
                 throw new \InvalidArgumentException("Invalid value for enum '$class', must be one of: '$imploded'");
             }
             return $data;
+        } elseif (is_subclass_of($class, AliasInterface::class)) {
+            return self::deserialize($data, $class::getType());
         } else {
             // If a discriminator is defined and points to a valid subclass, use it.
             $discriminator = $class::DISCRIMINATOR;
