@@ -45,6 +45,8 @@ class AirDirection
      * Possible values of this enum
      */
     const EMPTY = '';
+    const AUTO = 'auto';
+    const STILL = 'still';
     
     /**
      * Gets allowable values of the enum
@@ -54,6 +56,8 @@ class AirDirection
     {
         return [
             self::EMPTY,
+            self::AUTO,
+            self::STILL,
         ];
     }
 }
