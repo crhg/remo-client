@@ -621,7 +621,7 @@ definitions:
     type: object
     description: The reference key to SensorValue means "te" = temperature, "hu" = humidity.
     properties:
-      value:
+      val:
         type: number
         format: float
       created_at:
