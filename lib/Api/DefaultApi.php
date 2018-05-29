@@ -3648,7 +3648,7 @@ class DefaultApi
      *
      * @throws \Crhg\RemoClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Crhg\RemoClient\Model\Devices
+     * @return \Crhg\RemoClient\Model\Device[]
      */
     public function devicesGet()
     {
@@ -3662,11 +3662,11 @@ class DefaultApi
      *
      * @throws \Crhg\RemoClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Crhg\RemoClient\Model\Devices, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Crhg\RemoClient\Model\Device[], HTTP status code, HTTP response headers (array of strings)
      */
     public function devicesGetWithHttpInfo()
     {
-        $returnType = '\Crhg\RemoClient\Model\Devices';
+        $returnType = '\Crhg\RemoClient\Model\Device[]';
         $request = $this->devicesGetRequest();
 
         try {
@@ -3718,7 +3718,7 @@ class DefaultApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Crhg\RemoClient\Model\Devices',
+                        '\Crhg\RemoClient\Model\Device[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3758,7 +3758,7 @@ class DefaultApi
      */
     public function devicesGetAsyncWithHttpInfo()
     {
-        $returnType = '\Crhg\RemoClient\Model\Devices';
+        $returnType = '\Crhg\RemoClient\Model\Device[]';
         $request = $this->devicesGetRequest();
 
         return $this->client
