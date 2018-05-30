@@ -58,7 +58,7 @@ class SensorValue implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'value' => 'float',
+        'val' => 'float',
         'created_at' => '\Crhg\RemoClient\Model\\DateTime'
     ];
 
@@ -68,7 +68,7 @@ class SensorValue implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'value' => 'float',
+        'val' => 'float',
         'created_at' => null
     ];
 
@@ -99,7 +99,7 @@ class SensorValue implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'value' => 'value',
+        'val' => 'val',
         'created_at' => 'created_at'
     ];
 
@@ -109,7 +109,7 @@ class SensorValue implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'value' => 'setValue',
+        'val' => 'setVal',
         'created_at' => 'setCreatedAt'
     ];
 
@@ -119,7 +119,7 @@ class SensorValue implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'value' => 'getValue',
+        'val' => 'getVal',
         'created_at' => 'getCreatedAt'
     ];
 
@@ -183,7 +183,7 @@ class SensorValue implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['value'] = isset($data['value']) ? $data['value'] : null;
+        $this->container['val'] = isset($data['val']) ? $data['val'] : null;
         $this->container['created_at'] = isset($data['created_at']) ? $data['created_at'] : null;
     }
 
@@ -213,25 +213,25 @@ class SensorValue implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets value
+     * Gets val
      *
      * @return float
      */
-    public function getValue()
+    public function getVal()
     {
-        return $this->container['value'];
+        return $this->container['val'];
     }
 
     /**
-     * Sets value
+     * Sets val
      *
-     * @param float $value value
+     * @param float $val val
      *
      * @return $this
      */
-    public function setValue($value)
+    public function setVal($val)
     {
-        $this->container['value'] = $value;
+        $this->container['val'] = $val;
 
         return $this;
     }
